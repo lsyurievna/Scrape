@@ -29,17 +29,15 @@ for row in rows[1:]: #omiting the first one as it contains the titles of the tab
     #We can put name in the first coulumn and the link in the second column 
     df.loc[i] = pd.Series({"name":name, "link":link})
     i = i+1
-
-print(df) 
     
+#Now, I need to place the text found in each of the links in another column of the dataframe
+#This turns out to be a scraping project inside of a scraping project
+
+#We can go through all of the items in the links column
+for link in df["link"]: 
+    page_to_scrape = requests.get(link)
+    soup = BeautifulSoup(page_to_scrape.text, "html.parser")
+    #Now, all of the research description information is located in <p> tags under a header like this:
+    #<h2 id="research-description">Research Description</h2> 
 
 
-
-
-
-# for row in rows [1:]:
-#     row_data = row.find_all("td")
-#     text_row_data = [data.text.strip() for data in row_data]
-#     length = len(df)
-#     df.loc[length] = text_row_data #put the text in <td> into an appropriately titled column
-# print(df)
