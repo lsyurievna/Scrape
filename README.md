@@ -1,5 +1,5 @@
-I am currently looking for a Master's program in Chemistry. I am particularly interested in computation and instrumentation heavy areas. Sometimes university
-websites group their faculty by area of research. This is not the case for McGill, where I am presented but a list with names and therefore have
+I am currently looking for a Master's program in Chemistry. I am particularly interested in computation/instrumentation-heavy areas. Sometimes university
+websites group their faculty by area of research. This is not the case for McGill, where there is a list with names and I therefore have
 to go through everyone's profiles to see weather their research corresponds with my interests.
 
 This program gives me a way to see which professors I might be interested to work with at a glance. It goes through every faculty's research page and 
